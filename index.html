@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finals Lab Task 3 - Table Manipulation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #1c1e21;
+      overflow-x: hidden;
+      background: url('https://img1.picmix.com/output/stamp/normal/0/7/8/0/2580870_8444e.gif') repeat;
+      background-size: 200px;
+    }
+
+    header {
+      padding: 3rem 2rem 1rem;
+      background-color: #00CDFEcc;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #00CDFEcc;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      color: #1877f2;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .card p, .card a {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #1c1e21;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    footer {
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      background-color: #00CDFEcc;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Finals Lab Task 3</h1>
+    <p>Table Manipulation</p>
+  </header>
+
+  <div style="max-width: 900px; margin: 2rem auto; padding: 0 2rem;">
+    <section>
+      <h2>Portfolio Overview</h2>
+      <div class="card">
+        <p>This portfolio shows how I learned MySQL by making and managing a product database. It includes easy steps like creating a table, setting rules, adding proper data, and editing a field. The main goal is to understand how to build and arrange a database using simple SQL commands.</p>
+      </div>
+
+      <h2>Step by Step Process</h2>
+      <div class="card">
+         <h3>1. Create the Table</h3>
+  <ul>
+    <li>Create a table named <strong>products</strong> with the following fields:</li>
+    <li><strong>id</strong> – an auto-incrementing primary key</li>
+    <li><strong>product_name</strong> – a text field (VARCHAR 100) that cannot be null</li>
+    <li><strong>price</strong> – a decimal field</li>
+  </ul>
+
+  <h3>2. Applying a CHECK Constraint</h3>
+  <ul>
+    <li>Implement a <strong>CHECK</strong> constraint to ensure that the <strong>price</strong> field always contains a value greater than 0.</li>
+  </ul>
+
+  <h3>3. Insert Products</h3>
+  <ul>
+    <li>Insert only the products with a positive price into the products table.</li>
+    <li>Exclude any items with negative prices.</li>
+  </ul>
+  <p>Valid entries to insert:</p>
+  <ul>
+    <li>Laptop – 999.99</li>
+    <li>Smartphone – 599.99</li>
+    <li>Tablet – 299.99</li>
+    <li>Keyboard – 19.99</li>
+    <li>Mouse – 14.99</li>
+    <li>Desk Lamp – 24.99</li>
+    <li>Speakers – 9.99</li>
+  </ul>
+
+  <h3>4. Update the Table</h3>
+  <ul>
+    <li>Update the <strong>product_name</strong> field so that it can store up to 120 characters.</li>
+  </ul>
+
+  <h2>Screenshots</h2>
+
+  <h3>Query Statements</h3>
+  <h4>Task 1</h4>
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/final%20lab%203%20task%201.png?raw=true" alt="Task 1 Screenshot">
+
+  <h4>Task 2</h4>
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/final%20lab%203%20task%202.png?raw=true" alt="Task 2 Screenshot">
+
+  <h4>Task 3</h4>
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/final%20lab%203%20task%203.png?raw=true" alt="Task 3 Screenshot">
+
+  <h4>Task 4</h4>
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/final%20lab%203%20task%204.png?raw=true" alt="Task 4 Screenshot">
+
+  <h3>Table Structure</h3>
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/final%20lab%203%20task%201.1.png?raw=true" alt="Table Structure Screenshot 1">
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/final%20lab%203%20tbl%20structure%20product.png?raw=true" alt="Table Structure Screenshot 2">
+
+  <h3>ER Diagram</h3>
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/final%20lab%203%20er%20diagram.png?raw=true" alt="ER Diagram">
+</section>
+
+</div>
+ <footer>
+    <p>©Cassandra Halili | Class I102 | 2025</p>
+    <a href="https://github.com/CMHalili/Final-Lab-Task-3" target="_blank" style="color:var(--neon); text-shadow: 0 0 6px var(--neon);">View Finals Lab Task 3 on Github</a>
+  </footer>
+
+</body>
+</html>
