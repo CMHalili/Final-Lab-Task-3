@@ -1,5 +1,5 @@
 # Final-Lab-Task-3
-
+- This portfolio shows how I learned MySQL by making and managing a product database. It includes easy steps like creating a table, setting rules, adding proper data, and editing a field. The main goal is to understand how to build and arrange a database using simple SQL commands.
 
 # Step by Step Process:
 ## 1. Create the Table 
